@@ -75,6 +75,24 @@ var listenToEvent = function() {
 }
 
 $(document).ready(function() {    
+
+    var nonLinearSlider = document.getElementById('nonlinear');
+
+    noUiSlider.create(nonLinearSlider, {
+        
+        start: [50],
+        range: {
+            // Starting at 500, step the value by 500,
+            // until 4000 is reached. From there, step by 1000.
+            'min': [ 10 ],
+            '30%': [ 50, 5 ],
+            '70%': [ 135, 10 ],
+            '90%': [ 300, 20 ],
+            'max': [ 700 ]
+        }
+    });
+
+
     /* Creating Select Menu */
     generateSelectMenu();
     
