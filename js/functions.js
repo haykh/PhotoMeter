@@ -12,11 +12,22 @@ var chClass = function (object) {
     }
 }
 
-
 var setGlobalValues = function(f, N, s, CoC) {
     if (CoC == null) {
         $("#bro").html("Please choose your DSLR.");
+        $(".values").prop('disabled', true);
+        $(".fslide").slider({disabled:true});
+        $(".Nslide").slider({disabled:true});
+        $(".sslide").slider({disabled:true});
     } else {
+        $(".values").prop('disabled', false);
+        $(".fslide").slider({disabled:false});
+        $(".Nslide").slider({disabled:false});
+        $(".sslide").slider({disabled:false});
+
+        /* 
+            calculating Dn, Df, DoF here
+        */
         var h = ((f*f/(CoC*N))/1000);
         if (s < h) {
             var Dn = (h*s/(h+s)).toFixed(2);
