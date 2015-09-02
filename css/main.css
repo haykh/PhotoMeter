@@ -1,0 +1,14 @@
+.features .glyphicon {
+    font-size: 32px;
+}
+.values {
+    width: 2.5em;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.listmenu0 {
+    width: 100%;
+}
