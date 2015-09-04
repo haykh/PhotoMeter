@@ -1,0 +1,24 @@
+{
+  "name": "nouislider",
+  "version": "8.0.2",
+  "main": "distribute/nouislider",
+  "license": "WTFPL",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compress": "^0.11.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leongersen/noUiSlider.git"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  }
+}
